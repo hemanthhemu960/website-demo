@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>High-Tech Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calculator-root">
+    <div class="calculator-card">
+      <div class="display" id="display">0</div>
+      <div class="buttons-grid">
+        <button class="btn op" data-action="clear">C</button>
+        <button class="btn op" data-action="sign">±</button>
+        <button class="btn op" data-action="percent">%</button>
+        <button class="btn op big" data-op="/">÷</button>
+
+        <button class="btn num">7</button>
+        <button class="btn num">8</button>
+        <button class="btn num">9</button>
+        <button class="btn op big" data-op="*">×</button>
+
+        <button class="btn num">4</button>
+        <button class="btn num">5</button>
+        <button class="btn num">6</button>
+        <button class="btn op big" data-op="-">−</button>
+
+        <button class="btn num">1</button>
+        <button class="btn num">2</button>
+        <button class="btn num">3</button>
+        <button class="btn op big" data-op="+">+</button>
+
+        <button class="btn zero num">0</button>
+        <button class="btn num">.</button>
+        <button class="btn equals" id="equals">=</button>
+      </div>
+      <div class="status" id="status"></div>
+    </div>
+    <footer class="help">
+      Simple steps: type numbers, choose operation, press "=" or use keyboard (Enter = equals).
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
